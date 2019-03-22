@@ -66,10 +66,8 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin:25px  auto;
-}
+/*Styling for all pages **********************************/
+
 header {
     display: flex;
     padding-bottom: 50px;
@@ -87,6 +85,33 @@ header nav a {
     text-decoration: none;
     color: black;
 }
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Home Page Specific CSS ******************************/
+
+.container-home-page {
+    width: 800px;
+    margin:25px  auto;
+}
+
 
 .top-content {
     display: flex;
@@ -183,21 +208,61 @@ header nav a {
     padding-right: 0;
 }
 
-footer {
-    width: 100%;
-    background: black;
+/* About page specific CSS ******************************/
+
+.container-about-page {
+    width: 800px;
+    margin:25px  auto;
 }
 
-footer nav {
-    width: 60%;
+.top-content_about {
+    border-bottom: 1px dashed black;
+    padding:20px; 
+}
+
+.middle-content_about {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10px;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+.middle-content_about .text-container_about {
+    width: 48%;
+    padding: 20px 0;
+    border-bottom: 1px dashed black;
 }
+
+.middle-content_about .bottom-half {
+    display:flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.middle-content_about .text-container_about p {
+    padding-bottom: 10px;
+   
+}
+
+.middle-content_about .text-container_about button {
+    text-decoration: none;
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    padding: 8px 20px;
+    font-size: 17px;
+    border: 1px solid black;
+	cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.middle-content_about h2 {
+    padding-top: 10px;
+}
+
+.bottom-content_about {
+    padding: 50px 0;
+    margin-left: 20px;
+}
+
