@@ -266,3 +266,31 @@ footer nav a {
     margin-left: 20px;
 }
 
+/*Contact CSS *********************************************/
+
+.container-contact-page {
+    width: 800px;
+    margin:25px  auto;
+}
+
+.container-contact-page .contact-message {
+    height: 100px;
+}
+
+.container-contact-page .contact-message h1 {
+    text-align: center;
+    padding; 25px;
+    font-size: 36px;   
+}
+
+.container-contact-page .contact-message p {
+    padding:25 px;
+    text-align: center;
+}
+
+.img-button {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
