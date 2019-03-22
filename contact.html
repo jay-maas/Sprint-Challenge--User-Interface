@@ -31,26 +31,49 @@
             <section>
                 <div class="contact-message">
                     <h1>Contact US</h1>
-                    <p>Please click the photo below to create a contact.</p>
                 </div>
             </section>
 
             <div class="img-button">
-                <a href="contact.html"><img src="img/download.jpg" alt="click-button"></a>
+                <button class="open-button" onclick="openForm()"><img class="click-button" src="img/download.jpg"></button>
 
             </div>
 
 
-   
+                <div class="form">
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Contact Us</h1>
     
-        
+                            <label for="name"><b>Your Name</b></label>
+                            <input type="text" placeholder="First and Last Name" name="email" required>
+    
+                            <label for="psw"><b>Your Contact Information</b></label>
+                            <input type="text" placeholder="Enter Your Email or Phone Number" name="psw" required>
+    
+                            <button type="submit" class="btn">Send...We will contact your shortly</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+    
+                    <script>
+                    function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                    }
+    
+                    function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                    }
+                    </script>
+                </div>
+
         <footer>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
                 <a href="#">Products</a>
                 <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <a href="contact.html" onclick="openForm()">Contact</a>
             </nav>
         </footer>
     </div><!-- container -->        
