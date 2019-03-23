@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sprint Challenge - Home</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container-contact-page">
+
+            <header>
+
+                <img src="img/lambda-black.png" alt="logo">
+                
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Products</a>
+                    <a href="#">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
+
+            <img src="img/interior10.jpg" alt="headPic_contact">
+
+            <section>
+                <div class="contact-message">
+                    <h1>Contact US</h1>
+                </div>
+            </section>
+
+            <div class="img-button">
+                <button class="open-button" onclick="openForm()"><img class="click-button" src="img/download.jpg"></button>
+
+            </div>
+
+
+                <div class="form">
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Contact Us</h1>
+    
+                            <label for="name"><b>Your Name</b></label>
+                            <input type="text" placeholder="First and Last Name" name="email" required>
+    
+                            <label for="psw"><b>Your Contact Information</b></label>
+                            <input type="text" placeholder="Enter Your Email or Phone Number" name="psw" required>
+    
+                            <button type="submit" class="btn">Send...We will contact your shortly</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+    
+                    <script>
+                    function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                    }
+    
+                    function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                    }
+                    </script>
+                </div>
+
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+                <a href="contact.html" onclick="openForm()">Contact</a>
+            </nav>
+        </footer>
+    </div><!-- container -->        
+</body>
+</html>
