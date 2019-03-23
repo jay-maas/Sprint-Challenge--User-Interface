@@ -355,8 +355,6 @@ footer nav a {
 
 
 .form-popup {
-  display: flex;
- 
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
